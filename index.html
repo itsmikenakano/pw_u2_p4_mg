@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./css/formulario.css">
+</head>
+
+<body>
+    <div class="container">
+        <header></header>
+        <nav></nav>
+        <section>
+            <h1>Ingresar Estudiantes</h1>
+            <div id="appForm">
+                <form class="form" action="#">
+                    <p type="Nombre:"> <input type="text" placeholder="Ingresar nombre" v-model="nombre"></p>
+                    <p type="Apellido:"> <input type="text" placeholder="Ingresar apellido" v-model="apellido"></p>
+                    <p type="Semestre:"> <input type="text" placeholder="Ingresar semestre" v-model="semestre"></p>
+                    <p type="Edad:"> <input type="text" placeholder="Ingresar edad" v-model="edad"></p>
+                    <button v-on:click="ingresarEstudiante">Ingresar</button>
+                </form>
+                <div id="listado-estudiantes">
+                    <h3>Listado de Estudiantes</h3>
+                    <ul>
+                        <li v-for="({nombre,apellido,semestre,edad}, index) in arregloEstudiantes">
+                            <p>{{index+1}}-{{nombre}}-{{apellido}}-{{semestre}}-{{edad}}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer></footer>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/formulario.js"></script>
+</body>
+
+</html>

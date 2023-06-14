@@ -1,0 +1,106 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: #40E0D0;
+}
+
+.form {
+    width: 340px;
+    height: 310px;
+    background-color: #87CEEB;
+    border-radius: 8px;
+    padding: 20px 30px;
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.4);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    margin: 10px 20px;
+    padding-bottom: 15px;
+    width: 360px;
+    text-align: center;
+    color: #333333;
+    border-bottom: 3px solid #333333;
+}
+
+p:before {
+    content: attr(type);
+    display: block;
+    margin: 10px 0px 6px 3px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #000000;
+}
+
+input {
+    width: 100%;
+    border: 0px solid;
+    border-bottom: 2px solid #333333;
+    font-weight: bold;
+    background: none;
+}
+
+::placeholder {
+    color: #008B8B;
+    font-weight: bold;
+    opacity: 10;
+}
+
+input:focus {
+    border-bottom: 4px solid #000000;
+    outline: none;
+}
+
+button {
+    display: block;
+    width: 150px;
+    margin: 25px auto;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color: #87CEEB;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #87CEEB;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #5F9EA0;
+}
+
+#listado-estudiantes {
+    margin: 30px;
+    padding: 10px;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+  }
+  
+  #listado-estudiantes h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-bottom: 3px solid #008B8B;
+  }
+  
+  #listado-estudiantes ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #listado-estudiantes li {
+    margin-bottom: 5px;
+  }
+  
+  #listado-estudiantes p {
+    margin-left: 40px;
+    font-size: 20px;
+  }

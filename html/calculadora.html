@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../css/calculadora.css">
+    </script>
+
+
+
+</head>
+
+<body>
+    <header></header>
+    <nav></nav>
+    <section>
+
+        <div class="titulo">
+            <h1>Calculadora</h1>
+        </div>
+
+        <div id="myApp3" class="container">
+            <div class="calculadora">
+                <label id="resultado">{{pantalla}}</label>
+                <button v-for="elem in miarreglo" :key="elem" v-on:click="agregarCaracter(elem)">{{elem}}</button>
+                <button class="cero" onclick="agregarCaracter('0')">0</button>
+                <button v-on:click="calcular()">=</button>
+                <button v-on:click="agregarCaracter('*')">*</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../js/calculadora.js"></script>
+</body>
+
+</html>
